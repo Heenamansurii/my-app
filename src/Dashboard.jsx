@@ -16,6 +16,20 @@ function Dashboard({ user, onLogout }) {
           <p>You are successfully logged in.</p>
         </div>
 
+        {/* User Information Section */}
+        <div className="user-info-card">
+          <h3>Your Account Information</h3>
+          <div className="info-item">
+            <label>Email:</label>
+            <p>{user.email}</p>
+          </div>
+          <div className="info-item">
+            <label>Password:</label>
+            <p>••••••••</p>
+            <small className="info-note">(Password is securely stored)</small>
+          </div>
+        </div>
+
         <div className="dashboard-grid">
           <div className="dashboard-card">
             <h3>Profile</h3>
